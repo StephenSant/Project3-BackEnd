@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  root 'home#index'
   resources :log_entries
   resources :crew_members
-  get 'creatures', to: 'creatures#index'
-  root 'home#index'
+  resources :creatures
 end
