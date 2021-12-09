@@ -1,0 +1,77 @@
+<%= form_with(model: creature, local: true) do |form| %>
+  <% if creature.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(creature.errors.count, "error") %> prohibited this creature from being saved:</h2>
+
+      <ul>
+      <% creature.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avg_height %>
+    <%= form.text_field :avg_height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avg_weight %>
+    <%= form.text_field :avg_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avg_length %>
+    <%= form.text_field :avg_length %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Domain' %>
+    <%= form.text_field :t_domain %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Kingdom' %>
+    <%= form.text_field :t_kingdom %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Phylum' %>
+    <%= form.text_field :t_phylum %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Class' %>
+    <%= form.text_field :t_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Order' %>
+    <%= form.text_field :t_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Family' %>
+    <%= form.text_field :t_family %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Genus' %>
+    <%= form.text_field :t_genus %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Species' %>
+    <%= form.text_field :t_species %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

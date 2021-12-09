@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Log type:</strong>
+  <%= @log_entry.log_type %>
+</p>
+
+<p>
+  <strong>Day written:</strong>
+  <%= @log_entry.day_written %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @log_entry.content %>
+</p>
+
+<p>
+  <strong>Written by:</strong>
+  <%= @log_entry.crew_member_id %>
+</p>
+
+<%= link_to 'Edit', edit_log_entry_path(@log_entry) %> |
+<%= link_to 'Back', log_entries_path %>

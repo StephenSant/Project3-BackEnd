@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @creature.description %>
+</p>
+
+<p>
+  <strong>Avg height:</strong>
+  <%= @creature.avg_height %>
+</p>
+
+<p>
+  <strong>Avg weight:</strong>
+  <%= @creature.avg_weight %>
+</p>
+
+<p>
+  <strong>Avg length:</strong>
+  <%= @creature.avg_length %>
+</p>
+
+<p>
+  <strong>Domain:</strong>
+  <%= @creature.t_domain %>
+</p>
+
+<p>
+  <strong>Kingdom:</strong>
+  <%= @creature.t_kingdom %>
+</p>
+
+<p>
+  <strong>Phylum:</strong>
+  <%= @creature.t_phylum %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @creature.t_class %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @creature.t_order %>
+</p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @creature.t_family %>
+</p>
+
+<p>
+  <strong>Genus:</strong>
+  <%= @creature.t_genus %>
+</p>
+
+<p>
+  <strong>Species:</strong>
+  <%= @creature.t_species %>
+</p>
+
+<%= link_to 'Edit', edit_creature_path(@creature) %> |
+<%= link_to 'Back', creatures_path %>
